@@ -59,7 +59,6 @@ function expensesReducer(state, action) {
 
       return [...state, { ...action.payload, id: id }];
     case "UPDATE":
-      console.log(action);
       const updatableExpenseIndex = state.findIndex(
         (expense) => expense.id === action.payload.id
       );

@@ -12,8 +12,6 @@ export function ManageExpenseScreen({ route, navigation }) {
 
   const editedExpenseId = route.params?.expenseId;
   const isEditing = !!editedExpenseId;
-  console.log(addExpenses);
-  console.log(updateExpenses);
   function deleteExpenseHandler() {
     if (!editedExpenseId) return;
 
